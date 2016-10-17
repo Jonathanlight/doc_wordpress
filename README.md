@@ -4,14 +4,14 @@ get ID user connect
 get_current_user_id()
 
 
-Requete get_post
+Requete get_post / TABLE wp_post 
 <?php
     		$args = array(
 			  'numberposts' => 5,
 			  'post_type'   => 'noo_job',
 			  'orderby'     => 'date',
-        'order'       => 'DESC',
-        'author'      => get_current_user_id()
+                          'order'       => 'DESC',
+                          'author'      => get_current_user_id()
 			);
 			$emploi_ffn = get_posts( $args );
  ?>
